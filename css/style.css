@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;600;700;900&family=Open+Sans:ital,wght@0,300;0,700;1,300&family=Poppins:wght@200;500;800&display=swap');
+
+:root {
+    --main-color:  #00C3DA ;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+ 
+
+/* start nav  */
+.navbar {
+    border-bottom: 1px solid #707071;
+}
+
+
+.navbar .navbar-brand {
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+}
+.navbar .navbar-brand span {
+    color: var(--main-color);
+}
+.navbar .navbar-nav::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100px;
+    background-color: #707071;
+    right: 0;
+    bottom: -30px;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+    font-size: 13px;
+    padding: 0 15px;
+    color: #fff;
+}
+.navbar  .icons i {
+    color: #fff;
+    
+}
+
+/* end  nav  */
+
+/* start home  */
+.carousel-item {
+    height: 100vh;
+    min-height: 100vh;
+    background: no-repeat scroll center scroll;
+    background-size: cover;
+}
+.carousel-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: .5;
+}
+.carousel-caption {
+    bottom: 180px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.carousel-caption h5 {
+    font-size: 100px;
+    font-weight: 700;
+
+}
+.carousel-caption p {
+    font-size: 20px;
+}
+.caro-btn {
+    padding: 10px 0;
+    
+}
+.caro-btn button {
+    padding: 15px 25px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    transition: .3s;
+    position: relative;
+}
+.caro-btn .two:hover {
+background-color: #fff;
+color:#000 ;
+}
+.caro-btn .one {
+    margin-right: 10px;
+    background-color: var(--main-color);
+    border: none;
+}
+.caro-btn .one,
+.caro-btn .two{
+    transition: .5s;
+}
+.caro-btn .one:hover, 
+.caro-btn .two:hover {
+top: -1px;
+}
+ 
+
+/* end home  */
+ 
+/* start about  */
+    .about{
+        background-color: #fff;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-bottom: 1px solid #bbb;
+    }
+    .about .about-content {
+        width: 60%;
+        margin: auto;
+        margin-top: 20px;
+        padding: 30px ;
+        text-align: center;
+    }
+    .about .about-content h5 {
+        color: black;
+        font-size: 15px;
+        /* letter-spacing: 1.2px; */
+        padding: 20px 0;
+
+    }
+    .about .about-content p {
+        padding-bottom: 30px;
+        color: #787878;
+        line-height: 1.8;
+        font-size: 20px;
+        font-weight: 200;
+    }
+    .about .about-content button {
+        padding: 15px 25px;
+        border: 1px solid #bbb;
+        font-size: 13px;
+        background-color: #fff;
+        transition: .3s;
+    }
+    .about .about-content button:hover {
+        background-color: #000;
+        color: #fff;
+    }
+/* end about  */
+    .team {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #fff;
+    }
+    .team .logo {
+        /* width: 100%; */
+        position: relative;
+        z-index: 1;
+    }
+    .team .logo::before {
+        content: "C";
+        position: absolute;
+        font-size: 80px;
+        font-weight: bold;
+        left: 0;
+        right: 0;
+        /* top: -40px; */
+        bottom: -20px;
+        margin: auto;
+        color: #f2f2f2;
+        text-align: center;
+     
+        z-index: -2;
+      
+    }
+    .team .logo h2 {
+        font-weight: bold;
+        color: black;
+        font-size: 38px;
+    }
+    .team .team-title p {
+        font-weight: 400;
+        font-size: 18px;
+        color: #787878;
+    }
+
+    .card {
+        width: 100%;
+        position: relative;
+        transition: .3s;
+        overflow: hidden;
+        
+    }
+   
+    .card .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 100%;
+        background-color: var(--main-color);
+        opacity: .8;
+        padding: 15px 10px;
+        transition: .3s;
+    }
+    .card:hover .overlay {
+        top: 0;
+     }
+    .card .overlay .icons i {
+        color: #fff;
+        font-size: 13px;
+    
+    }
+    .card .overlay .te {
+        position: absolute;
+        bottom: 0;
+        color: #fff;
+        padding: 10px 5px;
+    }
+    .card .overlay .te p {
+        font-size: 13px;
+        
+    }
+    .card .overlay .te span {
+        font-size: 13px;
+        
+    }
+    /* end team  */
+
+    /* start services  */
+    .services {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #707071;
+    }
+    .services .serv {
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+    .services .serv h4 {
+        color: #fff;
+        font-size: 14px;
+    }
+    .services .ser {
+        color: #fff;
+        
+    }
+    .services .ser .title h2{
+        position: relative;
+        font-weight: bold;
+        padding-bottom: 20px;
+        z-index: 10;
+    }
+    .services .ser .title h2::before {
+        content: "W";
+        position: absolute;
+        top: -33px;
+        left: -5px;
+        font-size: 68px;
+        opacity: .09;
+        z-index: -1;
+    }
+    .services .ser  p { 
+        font-size: 14px;
+    }
+    .services .ser .check-list {
+        padding-left: 50px;
+      
+    }
+    .services .ser .check-list li{
+        padding-bottom: 13px;
+    }
+    .services .ser .check-list i {
+        margin-right: 5px;
+    }
+    /* end services  */ 
+
+    /* start pricing  */
+    .pricing {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #f7f7f7;
+    }
+    .pricing .logo {
+        
+        position: relative;
+        z-index: 1;
+    }
+    .pricing .logo::before {
+        content: "C";
+        position: absolute;
+        font-size: 80px;
+        font-weight: bold;
+        left: 0;
+        right: 0;
+        bottom: -20px;
+        margin: auto;
+        color: #eee;
+        text-align: center;
+     
+        z-index: -2;
+      
+    }
+    .pricing .logo h2 {
+        font-weight: bold;
+        color: black;
+        font-size: 38px;
+    }
+    .pricing .pricing-title p {
+        font-weight: 400;
+        font-size: 18px;
+        color: #787878;
+    }
+    .pricing .price {
+        padding: 10px 0;
+    }
+    .pricing .price .active {
+        color: var(--main-color);
+    }
+    .pricing .pricing-head h4 {
+        font-size: 13px;
+    }
+    .pricing .pricing-head.best {
+        display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.pricing .pricing-head.best span {
+    font-size: 9px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 20px 20px ;
+    background-color: var(--main-color);
+
+}   
+    .pricing .price h2 {
+        font-size: 50px;
+        font-weight: 500;
+        letter-spacing: -3px;
+        margin: 0;
+    }
+    .pricing .price span {
+        font-size: 18px;
+        vertical-align: top;
+        font-weight: 400;
+    }
+    .pricing ul {
+        border-top: 1px solid #eee;
+        margin: 0;
+        padding: 20px 0;
+    }
+    .pricing li {
+        padding: 10px 0;
+        font-size: 14px;
+        font-weight: 400;
+        color: #787878;
+    }
+    .pricing .card-btn button {
+        padding: 7px 10px;
+        border: none;
+        border-radius: 4px;
+        background-color: var(--main-color);
+        color: #fff;
+        font-size: 14px;
+        /* padding-bottom: 10px; */
+    }
+    .pricing .card {
+        padding: 40px  ;
+        border: none;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+    }
+    .pricing .card.gold {
+        transform: scale(1.08);
+    }
+    /* end pricing  */
+
+    /* start customers  */
+    .customers {
+     background-color: #f7f7f7;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    .customers .car-img {
+        width: 100px;
+        height: 100px;
+        
+        transform: translateY(-50%);
+        
+    }
+    .customers .cur-title h5{
+        font-size: 15px;
+        font-weight: 200;
+        padding: 20px 0;
+        text-transform: uppercase;
+    }
+    .customers .cur-item {
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        border-radius: 5px;
+        background-color: white;
+    }
+    .customers .cur-item h4 {
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 30px 0;
+    }
+    .customers .cur-item span {
+        font-size: 15px;
+        font-weight: 400;
+        padding-bottom: 35px ;
+    }
+    .customers .cur-item p {
+        width: 70%;
+        padding: 30px 0;
+        margin: auto;
+        font-size: 15px;
+        font-weight: 100;
+        color: #878787;
+    }
+    
+    .carousel-control-next, .carousel-control-prev {
+        color: #707071;
+    }
+
+.carousel-indicators.blue [data-bs-target] {
+    width: 10px ;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #aaa;
+}
+
+.carousel-indicators.blue .active {
+    opacity: 1;
+    background-color: var(--main-color);
+}
+.carousel-item.white::before {
+    background-color: transparent;
+}
+/* .carousel-item::before {
+    background-color: transparent;
+
+} */
+    /* end customers  */
+
+    /* start contact  */
+    .contact {
+        overflow: hidden;
+    }
+    .contact .map iframe {
+    width: 100%;
+    height: 100vh;
+    }
+    .contact .contact-e {
+        width: 70%;
+        margin: auto;
+        padding: 50px 0;
+    }
+
+    .contact .contact-e .contact-title h2  {
+        font-size: 35px;
+        font-weight: bold;
+        position: relative;
+    }
+    .contact .contact-e .contact-title h2::before {
+        content: "G";
+        position: absolute;
+        font-size: 70px;
+        font-weight: bold;
+        left: 0;
+        right: 0;
+        bottom: -10px;
+        color: #f2f2f2;
+        z-index: -1;
+    }
+    .contact .contact-e .contact-title span {
+        color: #787878;
+        font-weight: 100;
+    }
+    .contact .contact-e form h5{
+        font-size: 13px;
+        padding-top: 20px;
+        margin: 0 0 5px 0;
+        font-weight: 300;
+
+    }
+    .contact .contact-e form input{
+        width: 100%;
+        padding: 7px;
+        border: 3px solid #eee;
+    }
+    .contact .contact-e form textarea {
+        width: 100%;
+        padding: 30px;
+        border: 3px solid #eee;
+    }
+    .contact .contact-e form button {
+        padding: 15px 20px;
+        border: none;
+        background-color: var(--main-color);
+        border-radius: 5px;
+        font-size: 15px;
+        color: #fff;
+    }
+
+    /* end contact  */
